@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- penghubung ke Font Awesome nih -->
+    <!-- <script src="https://kit.fontawesome.com/d13c450b03.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" type="text/css" href="unity/fontawesome/css/all.min.css">
+
+    <title>REPOSI-IBIK57</title>
+  </head>
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand font-weight-bold text-white" href="index.html">
+          REPOSI-IBIK57
+        </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+              data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> <!-- Button ini kan muncul ketika mengecilkan ukuran website kita -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto"> <!-- class ml-auto berfungsi untuk merapihkan menu agar tampil di sebelah kanan -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="contactus.php">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#informasi" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  LOGIN
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="loginsuperadmin.php">Login Super Admin</a>
+                  <div class="dropdown-divider"></div> <!-- class ini untuk garis pemisah -->
+                  <a class="dropdown-item" href="logindosen.php">Login Dosen</a>
+              </li>
+          <li>
+            <!-- mt= margin top, ml=margin left -->
+            <i class="fab fa-whatsapp ml-3 mt-2"></i>
+            <i class="fab fa-facebook-square ml-3 mt-2"></i>
+            <i class="fab fa-twitter ml-3 mt-2"></i>
+            <i class="fab fa-instagram ml-3 mt-2"></i>
+            <i class="fas fa-search ml-3 mt-2"></i>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+    <!-- Bagian Slider / Jumbotron -->
+    <center>
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-4">REPOSITORY <br> <span class="font-weight-bold">JURUSAN SISTEM INFORMASI</span></h1>
+            <p class="lead"><b>Semua Informasi Yang Anda Butuhkan, Semua Ada Disini !</b></p>
+            <!-- class lead berguna agar tag p diatas terlihat lebih tipis -->
+            <a class="btn btn-primary btn-lg" href="#" role="button">Kunjungi</a>
+        </div>
+      </div>
+    </center>
+      <!-- ini test Slider dengan Indikatornya
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Slider/sld1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+
+                <h1 class="display-4">REPOSITORY <br> <span class="font-weight-bold">JURUSAN SISTEM INFORMASI</span></h1>
+                <p class="lead"><b>Semua Informasi Yang Anda Butuhkan, Semua Ada Disini !</b></p>
+                class lead berguna agar tag p diatas terlihat lebih tipis
+                <a class="btn btn-primary btn-lg" href="#" role="button">Kunjungi</a>
+
+              </div>
+            </div>
+          <div class="carousel-item">
+            <img src="img/Slider/sld2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>...</h5>
+                <p>...</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/Slider/sld3.jpg" class="d-block w-100" alt="...">
+          </div>
+          </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>-->
+
+    <!--ini bagian card E-Books-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/eBookReader.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title m-1">Semester 1</h5>
+                <p class="card-text">Berikut ini terdapat E-Book mata kuliah Semester 1</p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalSem1">Klik Disini</a>
+            <!--ini bagian PopUp menggunakan modal-->
+              <div class="modal fade" id="modalSem1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Mata Kuliah Semester 1</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <!--ini body nya nih-->
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label>Pendidikan Agama</label> <a href="unity/file-pdf/sem1-file-pdf/agama/find/find-agama-p1.php" class="tooltip-test" title="File PDF">Lihat</a> <br>
+                          <label>Pendidikan Pancasila</label> <a href="unity/file-pdf/sem1-file-pdf/Pancasila/find/find-pancasila-p1.php" class="tooltip-test" title="File PDF">Lihat</a> <br>
+                          <label>Bahasa Indonesia</label> <a href="unity/file-pdf/sem1-file-pdf/bindo/find/find-bindo-p1.php" class="tooltip-test" title="File PDF">Lihat</a><br>
+                          <label>Pengatar Teknologi Informasi dan Komunikasi</label><a href="unity/file-pdf/sem1-file-pdf/pengantarTIK/find/find-antarTIK-p1.php" class="tooltip-test" title="File PDF">Lihat</a> <br>
+                          <label>Logika Informatika</label><a href="unity/file-pdf/sem1-file-pdf/loginfo/find/find-loginfo-p1.php" class="tooltip-test" title="File PDF">Lihat</a> <br>
+                          <label>Algoritma dan Pemrograman</label><a href="unity/file-pdf/sem1-file-pdf/algo-pem/find/find-algo-p1.php" class="tooltip-test" title="File PDF">Lihat</a> <br>
+                          <label>English For Communication</label><a href="unity/file-pdf/sem1-file-pdf/english-com/find/find-englishcom-p1.php" class="tooltip-test" title="File PDF">Lihat</a> <br>
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/eBookReader.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title m-1">Semester 2</h5>
+                <p class="card-text">Berikut ini terdapat E-Book mata kuliah Semester 2</p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalSem2">Klik Disini</a>
+              <!--ini bagian PopUp menggunakan modal-->
+                <div class="modal fade" id="modalSem2" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Mata Kuliah Semester 2</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <!--ini body nya nih-->
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label>Kewarganegaraan</label><a href="unity/file-pdf/sem2-file-pdf/Kewarganegaraan/find/find-Kewarganegaraan-p1.php" class="tooltip-test" title="File PDF">Lihat</a> <br>
+                            <label>English for Computer And Technique</label><a href="unity/file-pdf/sem2-file-pdf/EnglishFct/find/find-EnglishFct-p1.php" class="tooltip-test" title="File PDF">Lihat</a> <br>
+                            <label>Entreprenurship</label><a href="unity/file-pdf/sem2-file-pdf/Entreprenurship/find/find-Entreprenurship-p1.php" class="tooltip-test" title="File PDF">Lihat</a> <br>
+                            <label>Konsep Sistem Informasi</label><a href="unity/file-pdf/sem2-file-pdf/KonsepSI/find/find-KonsepSI-p1.php" class="tooltip-test" title="File PDF">Lihat</a> <br>
+                            <label>Kekosgoroan</label><a href="unity/file-pdf/sem2-file-pdf/Kekosgoroan/find/find-Kekosgoroan-p1.php" class="tooltip-test" title="File PDF">Lihat</a> <br>
+                            <label>Arsitektur & Organisasi Komputer</label><a href="unity/file-pdf/sem2-file-pdf/Arsitektur-n-OK/find/find-Arsitektur-n-OK-p1.php" class="tooltip-test" title="File PDF">Lihat</a> <br>
+                            <label>Perancangan Basis Data</label><a href="unity/file-pdf/sem2-file-pdf/PerancanganBD/find/find-PerancanganBD-p1.php" class="tooltip-test" title="File PDF">Lihat</a> <br>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+           <div class="card">
+              <img src="img/eBookReader.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title m-1">Semester 3</h5>
+                    <p class="card-text">Berikut ini terdapat E-Book mata kuliah Semester 3</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalSem3">Klik Disini</a>
+                  <!--ini bagian PopUp menggunakan modal-->
+                    <div class="modal fade" id="modalSem3" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Mata Kuliah Semester 3</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <!--ini body nya nih-->
+                          <div class="modal-body">
+                            <form>
+                              <div class="form-group">
+                                <label>Kecakapan Antar Personal</label> <br>
+                                <label>Statistika</label> <br>
+                                <label>Komputer Akuntansi</label> <br>
+                                <label>Sistem Informasi Management</label> <br>
+                                <label>Pemrograman Visual I (JAVA)</label> <br>
+                                <label>Jaringan Komputer</label> <br>
+                                <label>Pemrograman Web I (HTML + CMS)</label> <br>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/eBookReader.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title m-1">Semester 4</h5>
+                      <p class="card-text">Berikut ini terdapat E-Book mata kuliah Semester 4</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalSem4">Klik Disini</a>
+                    <!--ini bagian PopUp menggunakan modal-->
+                      <div class="modal fade" id="modalSem4" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Mata Kuliah Semester 4</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <!--ini body nya nih-->
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-group">
+                                  <label>Pendidikan Anti Korupsi</label> <br>
+                                  <label>Interaksi Manusia dan Komputer</label> <br>
+                                  <label>Aljabar Linier</label> <br>
+                                  <label>Pemrograman Visual II</label> <br>
+                                  <label>Pemrograman Web II (PHP)</label> <br>
+                                  <label>Sistem Operasi</label> <br>
+                                  <label>Pengelolaan Proyek Sistem Informasi</label> <br>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                      </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<br> <!-- pemisah -->
+
+    <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/eBookReader.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title m-1">Semester 5</h5>
+                    <p class="card-text">Berikut ini terdapat E-Book mata kuliah Semester 5</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalSem5">Klik Disini</a>
+                  <!--ini bagian PopUp menggunakan modal-->
+                    <div class="modal fade" id="modalSem5" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Mata Kuliah Semester 5</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <!--ini body nya nih-->
+                          <div class="modal-body">
+                            <form>
+                              <div class="form-group">
+                                <label>Analisis Perancangan Sistem Informasi</label> <br>
+                                <label>Rekayasa Perangkat Lunak</label> <br>
+                                <label>Pemrograman Berbasis Objek I</label> <br>
+                                <label>Algoritma Struktur Data</label> <br>
+                                <label>Sistem Pendukung Keputusan</label> <br>
+                                <label>Automata</label> <br>
+                                <label>Artificial Intelligence</label> <br>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/eBookReader.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title m-1">Semester 6</h5>
+                    <p class="card-text">Berikut ini terdapat E-Book mata kuliah Semester 6</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalSem6">Klik Disini</a>
+                  <!--ini bagian PopUp menggunakan modal-->
+                    <div class="modal fade" id="modalSem6" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Mata Kuliah Semester 6</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <!--ini body nya nih-->
+                          <div class="modal-body">
+                            <form>
+                              <div class="form-group">
+                                <label>Pemrograman Berbasis Object II</label> <br>
+                                <label>Keamanan Komputer</label> <br>
+                                <label>Enterprise Resource Planning</label> <br>
+                                <label>Expert System</label> <br>
+                                <label>Teknik Riset Operasional</label> <br>
+                                <label>Metode Penelitian</label> <br>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+               <div class="card">
+                  <img src="img/eBookReader.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title m-1">Semester 7</h5>
+                      <p class="card-text">Berikut ini terdapat E-Book mata kuliah Semester 7</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalSem7">Klik Disini</a>
+                    <!--ini bagian PopUp menggunakan modal-->
+                      <div class="modal fade" id="modalSem7" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Mata Kuliah Semester 7</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <!--ini body nya nih-->
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-group">
+                                  <label>Praktek Kerja Lapangan</label> <br>
+                                  <label>Data Mining</label> <br>
+                                  <label>Sistem Informasi Geografis</label> <br>
+                                  </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                 <div class="card">
+                    <img src="img/eBookReader.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title m-1">Jurnal</h5>
+                        <p class="card-text">Ingin mencari Referensi Jurnal Penelitian ?</p>
+                      <a href="http://ejournal-ibik57.ac.id/" class="btn btn-primary">Klik Disini</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
